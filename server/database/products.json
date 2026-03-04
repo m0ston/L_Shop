@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "id": "1",
+    "title": "Смартфон iPhone 14",
+    "price": 79999,
+    "isAvailable": true,
+    "description": "Последняя модель с отличной камерой",
+    "categories": ["electronics", "phones"],
+    "images": {
+      "preview": "/images/iphone14.jpg"
+    },
+    "discount": 10
+  },
+  {
+    "id": "2",
+    "title": "Ноутбук Dell XPS 13",
+    "price": 129999,
+    "isAvailable": true,
+    "description": "Мощный и компактный ноутбук",
+    "categories": ["electronics", "laptops"],
+    "images": {
+      "preview": "/images/dell-xps.jpg"
+    }
+  },
+  {
+    "id": "3",
+    "title": "Наушники Sony WH-1000XM4",
+    "price": 29999,
+    "isAvailable": false,
+    "description": "Лучшее шумоподавление",
+    "categories": ["electronics", "audio"],
+    "images": {
+      "preview": "/images/sony.jpg"
+    },
+    "discount": 15
+  }
+]
