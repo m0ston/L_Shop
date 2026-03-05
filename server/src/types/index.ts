@@ -38,6 +38,7 @@ export interface BasketItem {
   productId: string;
   quantity: number;
 }
+export type BasketData = Record<string, BasketItem[]>
 
 export interface Basket {
   userId: string;
