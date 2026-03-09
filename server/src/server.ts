@@ -1,31 +1,30 @@
 import express from 'express';
 import cookieParser from 'cookie-parser';
+import cors from 'cors';
 import router from './router/router';
 
 const app = express();
 const port = 3000;
+
+app.use(cors({
+  origin: ['http://localhost:5173', 'http://127.0.0.1:5173'],
+  credentials: true
+}));
 
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
 
 // Routes
+
+
 app.use('/api', router);
 
-app.get('/', (req, res) => {
-  res.send(`
-    <html>
-      <body>
-        <h1>L_Shop API</h1>
-        <p>Теперь можно тестировать в консоли:</p>
-        <script>
-          fetch('/api/products').then(res => res.json()).then(console.log);
-        </script>
-      </body>
-    </html>
-  `);
+app.get('/', (_req, res) => {
+  res.type('text').send('L_Shop API is running. Use /api/products, /api/session, etc.');
 });
 
 app.listen(port, () => {
+  // eslint-disable-next-line no-console
   console.log(`Server is running on http://localhost:${port}`);
 });

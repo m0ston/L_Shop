@@ -1,1 +1,44 @@
-{}
+{
+  "1773071666551": [
+    {
+      "id": "1773072021156",
+      "userId": "1773071666551",
+      "createdAt": "2026-03-09T16:00:21.157Z",
+      "address": {
+        "country": "Беларусь",
+        "town": "Минск (Хатежино)",
+        "street": "Одинцова",
+        "houseNumber": "97/63"
+      },
+      "contact": {
+        "phone": "+375296939320",
+        "email": "desdun@khatezhino.com"
+      },
+      "paymentMethod": "card",
+      "comment": "Мама - Юлия Анатольевна, номер +375 29 693 93 15",
+      "items": [
+        {
+          "product": {
+            "id": "6",
+            "title": "Смартфон Android PixelNova",
+            "price": 45999,
+            "isAvailable": true,
+            "description": "Чистый Android, отличные фото, быстрые обновления.",
+            "categories": [
+              "electronics",
+              "phones"
+            ],
+            "images": {
+              "preview": ""
+            },
+            "discount": 0
+          },
+          "quantity": 3,
+          "unitPrice": 45999,
+          "lineTotal": 137997
+        }
+      ],
+      "total": 137997
+    }
+  ]
+}

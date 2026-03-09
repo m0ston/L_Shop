@@ -4,5 +4,14 @@
     "email": "test@test.com",
     "password": "123456",
     "name": "Test"
+  },
+  {
+    "id": "1773071666551",
+    "createdAt": "2026-03-09T15:54:26.551Z",
+    "name": "desdun",
+    "password": "11111111",
+    "email": "desdun@khatezhino.com",
+    "phone": "+375296939320",
+    "login": "Danik"
   }
 ]
