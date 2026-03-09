@@ -1,9 +1,11 @@
 export interface User {
   id: string;
-  email: string;
+  name: string;
   password: string;
-  name?: string;
+  email?: string;
   phone?: string;
+  login?: string;
+  createdAt: string;
 }
 
 export type PublicUser = Omit<User, 'password'>;
