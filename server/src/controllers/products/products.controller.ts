@@ -20,19 +20,29 @@ export async function getProductsHandler(req: Request, res: Response) {
   }
 }
 
-export async function getProductByIdHandler(req: Request, res: Response) {
+export async function getProductByIdHandler(req: Request, res: Response): Promise<void> {
   try {
     const idParam = req.params.id;
+
+    if (typeof idParam !== 'string') {
+      res.status(400).json({ error: 'Product ID must be a string' });
+      return;
+    }
+
     if (!idParam) {
-      return res.status(400).json({ error: 'Product ID is required' });
+      res.status(400).json({ error: 'Product ID is required' });
+      return;
     }
-    const id = Array.isArray(idParam) ? idParam[0] : idParam;
-    const product = await getProductById(id);
+
+    const product = await getProductById(idParam);
+
     if (!product) {
-      return res.status(404).json({ error: 'Product not found' });
+      res.status(404).json({ error: 'Product not found' });
+      return;
     }
+
     res.json(product);
-  } catch (error) {
+  } catch {
     res.status(500).json({ error: 'Failed to fetch product' });
   }
 }

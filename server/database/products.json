@@ -4,10 +4,13 @@
     "title": "Смартфон iPhone 14",
     "price": 79999,
     "isAvailable": true,
-    "description": "Последняя модель с отличной камерой",
-    "categories": ["electronics", "phones"],
+    "description": "Камера, OLED, быстрая зарядка — отличный вариант на каждый день.",
+    "categories": [
+      "electronics",
+      "phones"
+    ],
     "images": {
-      "preview": "/images/iphone14.jpg"
+      "preview": ""
     },
     "discount": 10
   },
@@ -16,22 +19,103 @@
     "title": "Ноутбук Dell XPS 13",
     "price": 129999,
     "isAvailable": true,
-    "description": "Мощный и компактный ноутбук",
-    "categories": ["electronics", "laptops"],
+    "description": "Лёгкий, мощный, отличный экран — для работы и учёбы.",
+    "categories": [
+      "electronics",
+      "laptops"
+    ],
     "images": {
-      "preview": "/images/dell-xps.jpg"
-    }
+      "preview": ""
+    },
+    "discount": 0
   },
   {
     "id": "3",
-    "title": "Наушники Sony WH-1000XM4",
-    "price": 29999,
-    "isAvailable": false,
-    "description": "Лучшее шумоподавление",
-    "categories": ["electronics", "audio"],
+    "title": "Игровая мышь HyperSpeed Pro",
+    "price": 4999,
+    "isAvailable": true,
+    "description": "Удобный хват, быстрый сенсор, минимальная задержка.",
+    "categories": [
+      "gaming",
+      "electronics"
+    ],
     "images": {
-      "preview": "/images/sony.jpg"
+      "preview": ""
     },
     "discount": 15
+  },
+  {
+    "id": "4",
+    "title": "Наушники NoiseCut 700",
+    "price": 11999,
+    "isAvailable": false,
+    "description": "Активное шумоподавление, мягкие амбушюры, хороший микрофон.",
+    "categories": [
+      "electronics",
+      "home"
+    ],
+    "images": {
+      "preview": ""
+    },
+    "discount": 0
+  },
+  {
+    "id": "5",
+    "title": "Кофемашина HomeBrew Mini",
+    "price": 19999,
+    "isAvailable": true,
+    "description": "Компактная кофемашина для дома. Быстрый старт и простая чистка.",
+    "categories": [
+      "home"
+    ],
+    "images": {
+      "preview": ""
+    },
+    "discount": 5
+  },
+  {
+    "id": "6",
+    "title": "Смартфон Android PixelNova",
+    "price": 45999,
+    "isAvailable": true,
+    "description": "Чистый Android, отличные фото, быстрые обновления.",
+    "categories": [
+      "electronics",
+      "phones"
+    ],
+    "images": {
+      "preview": ""
+    },
+    "discount": 0
+  },
+  {
+    "id": "7",
+    "title": "Игровая клавиатура MechaLite TKL",
+    "price": 8999,
+    "isAvailable": true,
+    "description": "Механические свитчи, подсветка, компактный формат без numpad.",
+    "categories": [
+      "gaming",
+      "electronics"
+    ],
+    "images": {
+      "preview": ""
+    },
+    "discount": 12
+  },
+  {
+    "id": "8",
+    "title": "Ноутбук OfficeMate 15",
+    "price": 58999,
+    "isAvailable": true,
+    "description": "Надёжный ноутбук для офисных задач, большой экран, тихая работа.",
+    "categories": [
+      "electronics",
+      "laptops"
+    ],
+    "images": {
+      "preview": ""
+    },
+    "discount": 0
   }
 ]
